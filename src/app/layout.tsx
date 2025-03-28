@@ -8,6 +8,8 @@ import {
   Geist_Mono,
 } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { LayoutWithHeader } from "@/components/layout/layout-with-header"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -87,9 +89,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <LayoutWithHeader>{children}</LayoutWithHeader>
         </ThemeProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )

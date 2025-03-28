@@ -5,6 +5,7 @@ import Link from "next/link"
 import { useCallback, useEffect, useRef, useState } from "react"
 import { ModeToggle } from "../mode-toggle"
 import { Logo } from "../svg/logo"
+import { usePathname } from "next/navigation"
 
 const links = [
   {
@@ -73,7 +74,8 @@ export const Header = () => {
 }
 
 const HeaderLink = ({ title, href }: { title: string; href: string }) => {
-  const isActive = href === "/"
+  const pathname = usePathname() || "/"
+  const isActive = href === pathname
   return (
     <div
       className={cn(

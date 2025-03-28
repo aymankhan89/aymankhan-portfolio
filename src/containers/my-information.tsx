@@ -17,11 +17,11 @@ export function MyInformation() {
         <CardContent className="!p-0">
           <div className="relative flex h-[550px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background">
             <Image
-              src="/images/kinhdev-avt.png"
+              src="/images/Subject5.png"
               alt="avatar"
-              width={280}
-              height={280}
-              className="absolute bottom-1 z-10"
+              width={1000}
+              height={1000}
+              className="absolute top-20 left-0 z-10"
             />
             <Ripple />
           </div>
