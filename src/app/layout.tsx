@@ -81,11 +81,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${jetBrainsMono.variable} ${geistSans.variable} ${geistMono.variable} ${ibmPlexMono.variable} antialiased scroll-smooth`}
+        className={`${jetBrainsMono.variable} ${geistSans.variable} ${geistMono.variable} ${ibmPlexMono.variable} antialiased scroll-smooth w-full max-w-dvw overflow-x-hidden`}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

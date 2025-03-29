@@ -9,7 +9,7 @@ export default function Home() {
         <MyUniverse />
       </FullScreen>
 
-      <FullScreen className="w-full xl:w-[85%] mx-auto">
+      <FullScreen className="w-full xl:w-[85%] mx-auto flex flex-col gap-6">
         <MyInformation />
       </FullScreen>
     </div>
