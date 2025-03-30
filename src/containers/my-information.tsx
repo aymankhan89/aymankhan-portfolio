@@ -115,7 +115,7 @@ export function MyInformation() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 w-full">
         <Card className="dark:bg-black/50 bg-white/50 col-span-1 md:col-span-2 lg:col-span-4 order-2 md:order-1">
-          <CardContent className="p-4 sm:p-6 md:p-8 lg:p-10 flex items-center justify-center">
+          <CardContent className="p-4 sm:p-6 md:p-8 lg:p-10 flex items-center justify-center overflow-hidden">
             <IconCloud images={images} />
           </CardContent>
         </Card>
@@ -137,13 +137,24 @@ export function MyInformation() {
                 </p>
               </div>
               <div className="flex gap-2 justify-between">
-                <Button variant="outline" size="icon">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/kinhdev24/",
+                      "_blank"
+                    )
+                  }
+                >
                   <Eye />
                 </Button>
 
-                <Button variant="outline" size="icon">
-                  <Download />
-                </Button>
+                <a href="/files/kinhbach_resume.pdf" download>
+                  <Button variant="outline" size="icon">
+                    <Download />
+                  </Button>
+                </a>
               </div>
             </CardContent>
           </Card>
@@ -201,27 +212,27 @@ const networks = [
   {
     name: "Github",
     icon: IconBrandGithub,
-    href: "https://github.com/duongkinh2000",
+    href: "https://github.com/kinhdev24",
   },
   {
     name: "Linkedin",
     icon: IconBrandLinkedin,
-    href: "https://www.linkedin.com/in/duong-kinh-2000/",
+    href: "https://www.linkedin.com/in/kinhdev24/",
   },
   {
     name: "Email",
     icon: IconMail,
-    href: "mailto:duong.kinh.2000@gmail.com",
+    href: "mailto:kinhdev24@gmail.com",
   },
   {
     name: "Facebook",
     icon: IconBrandFacebook,
-    href: "https://www.facebook.com/duong.kinh.50303",
+    href: "https://www.facebook.com/kinhdev24/",
   },
   {
     name: "Instagram",
     icon: IconBrandInstagram,
-    href: "https://www.instagram.com/duongkinh2000/",
+    href: "https://www.instagram.com/kinhdev24/",
   },
 ]
 

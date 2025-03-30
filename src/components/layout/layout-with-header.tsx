@@ -16,7 +16,7 @@ export const LayoutWithHeader = ({
         <main className="overflow-auto flex-1 container mx-auto p-4">
           {children}
         </main>
-        <footer className="text-sm md:text-lg row-start-3 flex gap-[24px] flex-wrap items-center justify-center text-zinc-600">
+        <footer className="text-sm md:text-lg row-start-3 flex gap-[24px] flex-wrap items-center justify-center text-zinc-600 px-4">
           © 2025 Kinh Bach. All rights reserved.
         </footer>
       </HeroBackground>

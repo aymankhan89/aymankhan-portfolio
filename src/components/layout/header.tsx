@@ -81,7 +81,7 @@ export const Header = () => {
       </div>
       <div className="flex items-center gap-2">
         <a
-          href={"#"}
+          href={"https://github.com/kinhdev24"}
           target="_blank"
           rel="noopener noreferrer"
           className="border p-2 rounded-2xl hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors duration-300"
@@ -107,8 +107,13 @@ export const Header = () => {
                 <Logo className="size-14" />
                 kinhdev.id.vn
               </DrawerTitle>
-              <DrawerClose asChild className="self-end -translate-y-14">
-                <Button variant="outline" size="icon">
+              <DrawerClose asChild className="self-end -translate-y-14 z-50">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  asChild
+                  className="size-8"
+                >
                   <IconX />
                 </Button>
               </DrawerClose>
