@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://voocgavdbpy2gucg.public.blob.vercel-storage.com/portfolio/openGraph-mhPZLB76CDzNO6yFkIPl98M6H6jbQQ.png",
+        url: "https://voocgavdbpy2gucg.public.blob.vercel-storage.com/portfolio/open-graph-gradient-3wEFbRCIAdVVjZ5TQfClsDBLEqtfqM.PNG",
         width: 1200,
         height: 630,
         alt: "Kinh Bach - Frontend Developer Portfolio",
@@ -68,8 +68,11 @@ export const metadata: Metadata = {
     description:
       "Explore Kinh Bach's frontend projects and expertise in React, Next.js, and modern web development.",
     images: [
-      "https://voocgavdbpy2gucg.public.blob.vercel-storage.com/portfolio/openGraph-mhPZLB76CDzNO6yFkIPl98M6H6jbQQ.png",
+      "https://voocgavdbpy2gucg.public.blob.vercel-storage.com/portfolio/open-graph-gradient-3wEFbRCIAdVVjZ5TQfClsDBLEqtfqM.PNG",
     ],
+  },
+  icons: {
+    icon: "/favicon.ico",
   },
 }
 
