@@ -5,6 +5,13 @@ const nextConfig: NextConfig = {
   experimental: {
     // reactCompiler: true,
   },
+  images: {
+    remotePatterns: [
+      { hostname: "pbs.twimg.com" },
+      { hostname: "yt3.googleusercontent.com" },
+      { hostname: "cdn.prod.website-files.com" },
+    ],
+  },
 }
 
 export default nextConfig

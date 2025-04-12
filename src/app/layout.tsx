@@ -6,6 +6,8 @@ import {
   IBM_Plex_Mono,
   Geist,
   Geist_Mono,
+  Preahvihear,
+  Poppins,
 } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { LayoutWithHeader } from "@/components/layout/layout-with-header"
@@ -30,6 +32,18 @@ const ibmPlexMono = IBM_Plex_Mono({
   variable: "--font-ibm-plex-mono",
   subsets: ["latin", "vietnamese"],
   weight: ["100", "200", "300", "400", "500", "600", "700"],
+})
+
+const preahvihear = Preahvihear({
+  variable: "--font-preahvihear",
+  subsets: ["latin"],
+  weight: ["400"],
+})
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 })
 
 export const metadata: Metadata = {
@@ -84,7 +98,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${jetBrainsMono.variable} ${geistSans.variable} ${geistMono.variable} ${ibmPlexMono.variable} antialiased scroll-smooth w-full max-w-dvw overflow-x-hidden`}
+        className={`${jetBrainsMono.variable} ${geistSans.variable} ${geistMono.variable} ${ibmPlexMono.variable} ${preahvihear.variable} ${poppins.variable} antialiased scroll-smooth w-full max-w-dvw overflow-x-hidden`}
       >
         <ThemeProvider
           attribute="class"

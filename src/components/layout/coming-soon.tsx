@@ -5,6 +5,7 @@ import { AnimatedSpan, Terminal, TypingAnimation } from "../magicui/terminal"
 import { HoverBorderGradient } from "../ui/hover-border-gradient"
 import { Logo } from "../svg/logo"
 import { useRouter } from "next/navigation"
+import { FullScreen } from "../full-screen"
 
 export const ComingSoonPage = ({ pageName }: { pageName?: string }) => {
   const [mounted, setMounted] = useState(false)
@@ -16,7 +17,7 @@ export const ComingSoonPage = ({ pageName }: { pageName?: string }) => {
   }, [])
   if (!mounted) return null
   return (
-    <div className="w-full flex justify-center items-center flex-col">
+    <FullScreen className="flex-col">
       <Terminal>
         <TypingAnimation>&gt; pnpm dlx kinhdev@portfolio init</TypingAnimation>
 
@@ -81,6 +82,6 @@ export const ComingSoonPage = ({ pageName }: { pageName?: string }) => {
           <span>Back to home</span>
         </HoverBorderGradient>
       </div>
-    </div>
+    </FullScreen>
   )
 }
