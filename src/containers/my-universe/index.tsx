@@ -66,7 +66,7 @@ export const MyUniverse = () => {
           Welcome to my universe
         </div>
         <div className="flex flex-row gap-4 items-center my-4 lg:my-0 lg:block">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight my-4 md:my-8 dark:text-zinc-300 text-zinc-700 font-[family-name:var(--font-geist-sans)]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight my-4 md:my-8 dark:text-zinc-300 text-zinc-700 font-[family-name:var(--font-poppins)]">
             Hello<span className="lg:hidden">,</span>
           </h1>
 
@@ -108,10 +108,13 @@ export const MyUniverse = () => {
             </TextAnimate>
           </motion.div>
         </div>
-        <div className="text-lg font-bold text-zinc-600 dark:text-zinc-400 my-6 md:my-10">
-          React Enthusiast ⚛️ | Next.js Explorer 🚀 |{" "}
-          <br className="hidden sm:block" /> Building Scalable UIs & Crafting
-          the Future of Web 💻✨
+        <div className="text-lg font-[family-name:var(--font-preahvihear)] text-zinc-600 dark:text-zinc-400 my-6 md:my-10 font-medium">
+          React Enthusiast ⚛️ | Next.js Explorer 🚀
+          <br className="hidden sm:block" />{" "}
+          <span>
+            Leading scalable UI development & shaping modern web experiences
+            with clean, efficient code 💻✨
+          </span>
         </div>
       </div>
       <div className="flex-1 flex justify-center lg:justify-end w-full mt-8 lg:mt-0">
@@ -138,7 +141,7 @@ export function CompareDemo() {
 
 export const Title = memo(() => {
   return (
-    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight sm:my-6 dark:text-zinc-300 text-zinc-700 font-[family-name:var(--font-geist-sans)]">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight sm:my-6 dark:text-zinc-300 text-zinc-700 font-[family-name:var(--font-poppins)]">
       I&apos;m <Cover>Kinh Bach</Cover>
     </h1>
   )
