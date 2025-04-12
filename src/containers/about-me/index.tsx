@@ -167,13 +167,18 @@ const KeyAchievements = () => {
 
   const currentTheme = theme === "system" ? systemTheme : theme
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+    <div
+      className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6"
+      key={currentTheme}
+    >
       <motion.div
         className="p-4 rounded-lg bg-gray-50 dark:bg-gray-700 flex flex-col items-center text-center cursor-pointer transition-colors duration-300"
         whileHover={{
           scale: 1.05,
           backgroundColor:
-            theme === "dark" ? "rgba(167, 139, 250, 0.2)" : "rgb(243 232 255)",
+            currentTheme === "dark"
+              ? "rgba(167, 139, 250, 0.2)"
+              : "rgb(243 232 255)",
           boxShadow:
             "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
         }}
@@ -229,7 +234,9 @@ const KeyAchievements = () => {
         whileHover={{
           scale: 1.05,
           backgroundColor:
-            theme === "dark" ? "rgba(251, 191, 36, 0.2)" : "rgb(254 243 199)",
+            currentTheme === "dark"
+              ? "rgba(251, 191, 36, 0.2)"
+              : "rgb(254 243 199)",
           boxShadow:
             "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
         }}

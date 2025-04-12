@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://voocgavdbpy2gucg.public.blob.vercel-storage.com/portfolio/open-graph-gradient-3wEFbRCIAdVVjZ5TQfClsDBLEqtfqM.PNG",
+        url: "https://voocgavdbpy2gucg.public.blob.vercel-storage.com/open-graph-6fkPvt3jl60AhDWy2pPhfp3PKoZPrZ.png",
         width: 1200,
         height: 630,
         alt: "Kinh Bach - Frontend Developer Portfolio",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     description:
       "Explore Kinh Bach's frontend projects and expertise in React, Next.js, and modern web development.",
     images: [
-      "https://voocgavdbpy2gucg.public.blob.vercel-storage.com/portfolio/open-graph-gradient-3wEFbRCIAdVVjZ5TQfClsDBLEqtfqM.PNG",
+      "https://voocgavdbpy2gucg.public.blob.vercel-storage.com/open-graph-6fkPvt3jl60AhDWy2pPhfp3PKoZPrZ.png",
     ],
   },
   icons: {
@@ -103,7 +103,6 @@ export default function RootLayout({
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
-          enableSystem
           disableTransitionOnChange
         >
           <LayoutWithHeader>{children}</LayoutWithHeader>
