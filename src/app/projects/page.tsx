@@ -1,5 +1,9 @@
-import { ComingSoonPage } from "@/components/layout/coming-soon"
+import { ProjectCardsCarousel } from "./project-list"
 
 export default function Page() {
-  return <ComingSoonPage pageName="Projects" />
+  return (
+    <div className="w-full xl:w-[85%] mx-auto">
+      <ProjectCardsCarousel />
+    </div>
+  )
 }

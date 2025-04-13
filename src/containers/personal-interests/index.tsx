@@ -7,10 +7,10 @@ import { cn } from "@/lib/utils"
 import { IconClipboardCopy } from "@tabler/icons-react"
 import { Blocks, Music2, Rss } from "lucide-react"
 import { motion } from "motion/react"
-import Image from "next/image"
 import { useEffect, useState } from "react"
 import { SpotifyPlaylist } from "./spotify-playlist"
 import { StackCloud } from "./stack-cloud"
+import { BlurImage } from "@/components/ui/apple-cards-carousel"
 
 export function PersonalInterests() {
   const [mounted, setMounted] = useState(false)
@@ -176,7 +176,7 @@ const SkeletonFour = () => {
         target="_blank"
       >
         <div className="p-1 rounded-xl bg-black">
-          <Image
+          <BlurImage
             src="https://cdn.prod.website-files.com/5e0a5d9d743608d0f3ea6753/5f1d8b1b9c7814aae6b69044_Daily%20Full%20logo.svg"
             alt="avatar"
             height="100"
@@ -192,7 +192,7 @@ const SkeletonFour = () => {
         href="https://www.youtube.com/@DaveGrayTeachesCode"
         target="_blank"
       >
-        <Image
+        <BlurImage
           src="https://yt3.googleusercontent.com/nv365KiAJyURPEBZyCh0SV3hSBnZXbvVXrzRwcNDfgUpXPn9-3_4PY0SkQrAJWnzQOxKqfUtrQ=s160-c-k-c0x00ffffff-no-rj"
           alt="avatar"
           height="100"
@@ -209,7 +209,7 @@ const SkeletonFour = () => {
         href="https://www.youtube.com/@WebDevSimplified"
         target="_blank"
       >
-        <Image
+        <BlurImage
           src="https://yt3.googleusercontent.com/ytc/AIdro_nO3F7DfVXaf6wsHPS_hF327ggeWUCwZSELb5DCWBL1aw=s160-c-k-c0x00ffffff-no-rj"
           alt="avatar"
           height="100"

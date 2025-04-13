@@ -1,49 +1,16 @@
+import { LayoutWithHeader } from "@/components/layout/layout-with-header"
 import { ThemeProvider } from "@/components/theme-provider"
 import "@/styles/globals.css"
-import type { Metadata } from "next"
-import {
-  JetBrains_Mono,
-  IBM_Plex_Mono,
-  Geist,
-  Geist_Mono,
-  Preahvihear,
-  Poppins,
-} from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
-import { LayoutWithHeader } from "@/components/layout/layout-with-header"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import type { Metadata } from "next"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-})
+import { Exo_2 } from "next/font/google"
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-})
-
-const jetBrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin", "vietnamese"],
-})
-
-const ibmPlexMono = IBM_Plex_Mono({
-  variable: "--font-ibm-plex-mono",
-  subsets: ["latin", "vietnamese"],
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
-})
-
-const preahvihear = Preahvihear({
-  variable: "--font-preahvihear",
-  subsets: ["latin"],
-  weight: ["400"],
-})
-
-const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+const exo2 = Exo_2({
+  subsets: ["latin", "vietnamese", "cyrillic"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-exo2",
 })
 
 export const metadata: Metadata = {
@@ -98,7 +65,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${jetBrainsMono.variable} ${geistSans.variable} ${geistMono.variable} ${ibmPlexMono.variable} ${preahvihear.variable} ${poppins.variable} antialiased scroll-smooth w-full max-w-dvw overflow-x-hidden`}
+        className={`${exo2.variable} antialiased scroll-smooth w-full max-w-dvw overflow-x-hidden`}
       >
         <ThemeProvider
           attribute="class"

@@ -1,6 +1,6 @@
 "use client"
+import { BlurImage } from "@/components/ui/apple-cards-carousel"
 import { Lens } from "@/components/ui/lens"
-import Image from "next/image"
 import { useState } from "react"
 
 export function MyResume() {
@@ -12,7 +12,7 @@ export function MyResume() {
         <div className="relative z-10">
           <Beams />
           <Lens hovering={hovering} setHovering={setHovering}>
-            <Image
+            <BlurImage
               src="/images/avt-card.png"
               alt="image"
               width={450}

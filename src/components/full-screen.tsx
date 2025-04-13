@@ -14,7 +14,7 @@ export const FullScreen = ({
     <div
       className={cn(
         className,
-        "w-full min-h-[calc(100dvh-100px)] flex items-center justify-center"
+        "w-full min-h-[calc(100dvh-100px)] flex items-center justify-center overflow-x-hidden"
       )}
     >
       {children}
