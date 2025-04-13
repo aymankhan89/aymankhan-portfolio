@@ -66,7 +66,7 @@ export const MyUniverse = () => {
           Welcome to my universe
         </div>
         <div className="flex flex-row gap-4 items-center my-4 lg:my-0 lg:block">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight my-4 md:my-8 dark:text-zinc-300 text-zinc-700 font-[family-name:var(--font-poppins)]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight my-4 md:my-8 dark:text-zinc-300 text-zinc-700">
             Hello<span className="lg:hidden">,</span>
           </h1>
 
@@ -108,10 +108,10 @@ export const MyUniverse = () => {
             </TextAnimate>
           </motion.div>
         </div>
-        <div className="text-lg font-[family-name:var(--font-preahvihear)] text-zinc-600 dark:text-zinc-400 my-6 md:my-10 font-medium">
+        <div className="text-lg text-zinc-600 dark:text-zinc-400 my-6 md:my-10 font-bold">
           React Enthusiast ⚛️ | Next.js Explorer 🚀
-          <br className="hidden sm:block" />{" "}
-          <span>
+          <br />{" "}
+          <span className="font-normal italic">
             Leading scalable UI development & shaping modern web experiences
             with clean, efficient code 💻✨
           </span>
@@ -141,7 +141,7 @@ export function CompareDemo() {
 
 export const Title = memo(() => {
   return (
-    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight sm:my-6 dark:text-zinc-300 text-zinc-700 font-[family-name:var(--font-poppins)]">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight sm:my-6 dark:text-zinc-300 text-zinc-700">
       I&apos;m <Cover>Kinh Bach</Cover>
     </h1>
   )

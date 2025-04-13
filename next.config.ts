@@ -10,6 +10,8 @@ const nextConfig: NextConfig = {
       { hostname: "pbs.twimg.com" },
       { hostname: "yt3.googleusercontent.com" },
       { hostname: "cdn.prod.website-files.com" },
+      { hostname: "assets.aceternity.com" },
+      { hostname: "images.unsplash.com" },
     ],
   },
 }
