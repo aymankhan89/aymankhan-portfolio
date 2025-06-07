@@ -6,7 +6,7 @@ import { VelocityScroll } from "@/components/magicui/scroll-based-velocity"
 import { Badge } from "@/components/ui/badge"
 import { GlowingEffect } from "@/components/ui/glowing-effect"
 import {
-  IconBrandFacebook,
+  // IconBrandFacebook,
   IconBrandGithub,
   IconBrandInstagram,
   IconBrandLinkedin,
