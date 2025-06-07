@@ -1,5 +1,6 @@
 import { FullScreen } from "@/components/full-screen"
 import { ExperienceTimeline } from "./containers/experience-timeline"
+import { ComingSoonPage } from "@/components/layout/coming-soon"
 
 export const metadata = {
   title: "Experience | Kinh Dev",
@@ -33,11 +34,5 @@ export const metadata = {
 }
 
 export default function Page() {
-  return (
-    <div>
-      <FullScreen>
-        <ExperienceTimeline />
-      </FullScreen>
-    </div>
-  )
+  return <ComingSoonPage pageName="About" />
 }
