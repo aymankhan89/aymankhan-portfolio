@@ -21,28 +21,7 @@ export function MyInformation() {
     <>
       <div className="flex flex-col gap-6">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full">
-          {/* <Card className="col-span-1 md:col-span-1 lg:col-span-2 dark:bg-black/50 bg-white/50 p-0 order-2 md:order-1">
-            <CardContent className="!p-0 h-full">
-              <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background">
-                <Image
-                  src="/images/Subject4.png"
-                  alt="avatar"
-                  width={1000}
-                  height={1000}
-                  className="z-10 object-contain md:translate-y-32 hidden dark:block"
-                />
-
-                <Image
-                  src="/images/Subject5.png"
-                  alt="avatar"
-                  width={1000}
-                  height={1000}
-                  className="z-10 object-contain md:translate-y-32 dark:hidden"
-                />
-                <Ripple className="" />
-              </div>
-            </CardContent>
-          </Card> */}
+        
           <div className="col-span-1 md:col-span-1 lg:col-span-2 dark:bg-black/50 bg-white/50 p-0 order-2 md:order-1">
             <MyResume />
           </div>
@@ -68,10 +47,9 @@ export function MyInformation() {
 
                     <div>
                       <p className="text-lg sm:text-xl relative z-20 mt-2 font-medium">
-                        Bach Duong Kinh
-                      </p>
+ProficientNow tech                      </p>
                       <p className="relative z-20 text-sm sm:text-base text-neutral-500 font-medium uppercase">
-                        Digital Fortress Co., Ltd.
+                       Hyderabad, Telengana
                       </p>
                       <p className="relative z-20 text-sm sm:text-base text-neutral-500 font-medium uppercase">
                         Frontend Developer
@@ -118,27 +96,23 @@ const networks = [
   {
     name: "Github",
     icon: IconBrandGithub,
-    href: "https://github.com/kinhdev24",
+    href: "https://github.com/aymankhan89",
   },
   {
     name: "Linkedin",
     icon: IconBrandLinkedin,
-    href: "https://www.linkedin.com/in/kinhdev24/",
+    href: "https://www.linkedin.com/in/mohammed-ayman-khan-370319263/",
   },
   {
     name: "Email",
     icon: IconMail,
-    href: "mailto:kinhdev24@gmail.com",
+    href: "mailto:khanayman080@gmail.com",
   },
-  {
-    name: "Facebook",
-    icon: IconBrandFacebook,
-    href: "https://www.facebook.com/kinhdev24/",
-  },
+
   {
     name: "Instagram",
     icon: IconBrandInstagram,
-    href: "https://www.instagram.com/kinhdev24/",
+    href: "https://www.instagram.com/ayman.drafs/",
   },
 ]
 
